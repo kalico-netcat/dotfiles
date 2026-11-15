@@ -26,5 +26,5 @@ style = "bright-black"
 format = "[$duration]($style) "
 
 [character]
-success_symbol = "[❯❯❯](green)"
+success_symbol = "[❯❯❯](purple)"
 error_symbol = "[❯❯❯](red)"
