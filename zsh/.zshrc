@@ -6,6 +6,10 @@ fpath=($HOME/.docker/completions $fpath)
 # source antidote
 source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
 
+# no highlight on history substring search matches
+HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND=''
+HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND=''
+
 # initialize plugins statically with ${ZDOTDIR:-$HOME}/.zsh_plugins.txt
 antidote load
 
