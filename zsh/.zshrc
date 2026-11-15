@@ -19,5 +19,8 @@ bindkey '^[[B' history-substring-search-down
 bindkey '^[OA' history-substring-search-up
 bindkey '^[OB' history-substring-search-down
 
+# prompt (config: ~/.config/starship.toml)
+if command -v starship >/dev/null; then eval "$(starship init zsh)"; fi
+
 # machine-specific settings
 if [[ -f ~/.zshrc.local ]]; then source ~/.zshrc.local; fi
