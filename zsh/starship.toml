@@ -1,20 +1,24 @@
 # colors are terminal palette names, so they follow the Terminal theme
 
 add_newline = false
-format = "$directory$git_branch$git_status$cmd_duration$character"
+format = "$username$hostname$directory$cmd_duration$character"
+
+[username]
+show_always = true
+style_user = "cyan"
+style_root = "red"
+format = "[$user]($style)"
+
+[hostname]
+ssh_only = false
+ssh_symbol = ""
+style = "cyan"
+format = "[@$hostname]($style) "
 
 [directory]
 style = "blue"
-truncation_length = 3
-truncate_to_repo = true
-
-[git_branch]
-symbol = " "
-style = "purple"
-format = "[$symbol$branch]($style) "
-
-[git_status]
-style = "yellow"
+truncation_length = 1
+truncate_to_repo = false
 
 [cmd_duration]
 min_time = 3_000
