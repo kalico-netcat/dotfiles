@@ -1,0 +1,15 @@
+# completions: add zsh-completions to fpath, then run compinit
+zsh-users/zsh-completions
+belak/zsh-utils path:completion
+
+# fuzzy tab completion (needs compinit; load before widget-wrapping plugins)
+Aloxaf/fzf-tab
+
+zsh-users/zsh-autosuggestions
+
+# use your aliases
+MichaelAquilina/zsh-you-should-use
+
+# syntax highlighting before history-substring-search, per its docs
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-history-substring-search
