@@ -1,0 +1,30 @@
+# colors are terminal palette names, so they follow the Terminal theme
+
+add_newline = false
+format = "$username$hostname$directory$cmd_duration$character"
+
+[username]
+show_always = true
+style_user = "cyan"
+style_root = "red"
+format = "[$user]($style)"
+
+[hostname]
+ssh_only = false
+ssh_symbol = ""
+style = "cyan"
+format = "[@$hostname]($style) "
+
+[directory]
+style = "blue"
+truncation_length = 1
+truncate_to_repo = false
+
+[cmd_duration]
+min_time = 3_000
+style = "bright-black"
+format = "[$duration]($style) "
+
+[character]
+success_symbol = "[❯❯❯](purple)"
+error_symbol = "[❯❯❯](red)"
